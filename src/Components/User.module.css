@@ -1,0 +1,12 @@
+.user h3 {
+  margin: 15px 0;
+}
+
+.user a {
+  text-decoration: none;
+}
+
+.user .visit {
+  margin: 0 15px 15px auto;
+  transition: 0.3s;
+}

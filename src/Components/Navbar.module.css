@@ -1,0 +1,13 @@
+.header {
+  font-family: "Silkscreen", cursive;
+  padding-left: 10px;
+}
+
+@media (max-width: 767px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+}
