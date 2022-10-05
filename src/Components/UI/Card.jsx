@@ -5,9 +5,9 @@ const Card = ({ user }) => {
   const { name, username, email, phone, address, company, website, id } = user;
   return (
     <div
-      className={`${styles.user} color-dark bg-light bor-rad-20 block-mobile over-hide p-20`}
+      className={`${styles.card} color-dark bg-light block-mobile over-hide p-20`}
     >
-      <h3 className="fs-24 color-black txt-c">{name}</h3>
+      <h3 className="fs-24 color-333 txt-c">{name}</h3>
       <p className="fs-14 fw-light">
         username: <span className="fs-18 fw-medium">{username}</span>
       </p>
