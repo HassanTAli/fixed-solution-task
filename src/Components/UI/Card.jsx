@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import styles from "./User.module.css";
+import styles from "./Card.module.css";
 
-const User = ({ user }) => {
+const Card = ({ user }) => {
   const { name, username, email, phone, address, company, website, id } = user;
   return (
     <div
@@ -46,4 +46,4 @@ const User = ({ user }) => {
   );
 };
 
-export default User;
+export default Card;

@@ -3,7 +3,7 @@ import { Fragment } from "react";
 import { useQuery } from "react-query";
 import { useParams } from "react-router-dom";
 
-import Post from "../Components/Post";
+import Accordion from "../Components/UI/Accordion";
 import styles from "./Posts.module.css";
 
 const url = "https://jsonplaceholder.typicode.com";
@@ -32,7 +32,7 @@ const Posts = () => {
         <div className={`${styles.accordion}`}>
           {!error &&
             posts &&
-            posts.map((post) => <Post key={post.id} post={post} />)}
+            posts.map((post) => <Accordion key={post.id} post={post} />)}
         </div>
       </div>
     </Fragment>

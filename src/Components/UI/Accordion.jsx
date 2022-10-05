@@ -1,7 +1,7 @@
 import { useState } from "react";
-import styles from "./Post.module.css";
+import styles from "./Accordion.module.css";
 
-const Post = ({ post }) => {
+const Accordion = ({ post }) => {
   const { title, body, id } = post;
 
   const [selected, setSelected] = useState(null);
@@ -34,4 +34,4 @@ const Post = ({ post }) => {
   );
 };
 
-export default Post;
+export default Accordion;
