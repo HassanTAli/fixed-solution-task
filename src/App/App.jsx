@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NotFound from "../Components/NotFound";
 import Navbar from "../Components/UI/Navbar";
 import Posts from "../Pages/Posts";
 import Users from "../Pages/Users";
@@ -14,6 +15,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Users />} />
             <Route path="/post/:id" element={<Posts />} />
+            <Route component={NotFound} />
           </Routes>
         </Router>
       </div>
