@@ -33,12 +33,12 @@ const Card = ({ user }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Website
+          {website}
         </a>
       </div>
       <Link
         to={`/post/${id}`}
-        className={`${styles.visit} d-block fs-14 bor-rad-6 bg-blue color-white w-fit btn-shape `}
+        className={`${styles.visit} d-block fs-14 bg-blue color-white w-fit btn-shape `}
       >
         See Posts
       </Link>

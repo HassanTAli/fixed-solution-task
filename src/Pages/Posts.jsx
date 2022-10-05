@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useQuery } from "react-query";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 import Accordion from "../Components/UI/Accordion";
 import Loader from "../Components/UI/Loader";
@@ -26,6 +26,9 @@ const Posts = () => {
   return (
     <div className="bg-dark">
       <h2 className="center-flex fs-36">Posts</h2>
+      <Link to="/" className="center-flex fs-36 color-333 p-20">
+        Back To Users
+      </Link>
       {isLoading && <Loader />}
       {isError && (
         <div className="full-w-h">
