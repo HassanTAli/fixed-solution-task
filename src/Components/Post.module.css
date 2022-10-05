@@ -1,0 +1,30 @@
+.item {
+  margin-bottom: 5px;
+  padding: 10px 20px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: #333;
+}
+
+.title h2 {
+  text-align: center;
+}
+
+.content {
+  color: #7d6e83;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0, 1, 0, 1);
+  text-align: center;
+}
+
+.content.show {
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.3s cubic-bezier(1, 0, 1, 0);
+}

@@ -8,13 +8,15 @@ import "./App.css";
 const App = () => {
   return (
     <div className="bg-dark">
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Users />} />
-          <Route path="/post/:userId" element={<Posts />} />
-        </Routes>
-      </Router>
+      <Navbar />
+      <div className="container">
+        <Router>
+          <Routes>
+            <Route path="/" element={<Users />} />
+            <Route path="/post/:id" element={<Posts />} />
+          </Routes>
+        </Router>
+      </div>
     </div>
   );
 };

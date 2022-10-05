@@ -14,12 +14,26 @@ body {
   --light-grayish-orange--color: #dfd3c3;
   --grayish-orange--color: #d0b8a8;
   --Dark-grayish-violet-color: #7d6e83;
+  --Dark-grey-color: #333;
 }
 
 /* App */
 
 .App {
   min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0;
+  }
 }
 
 /* flex , Grid and Display  */
